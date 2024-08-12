@@ -1,0 +1,390 @@
+/* Colour Scheme: analogous */
+/* #564733
+   #fcf2dd
+   #D2B48C
+*/
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    font-family: "Jost", sans-serif;
+    font-size: 0.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 35rem;
+    text-align: center;
+    margin: 0;
+    background-color: #fcf2dd;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.wrapper {
+    background-color: #564733;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mast-heading {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: #FFFF;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.button-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#controls button {
+    flex: 1;
+    background-color: #fcf2dd;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Jost", sans-serif;
+    border-radius: 5px;
+}
+
+#controls button:hover {
+    background-color: #D2B48C;
+}
+
+.mast-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #D2B48C;
+}
+
+.masthead {
+    width: 100%;
+    background-image: url(/img/masthead.webp);
+    background-size: cover;
+    background-position: center 0%;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.mast-info {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.mast-info h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+}
+
+.mast-info p {
+    font-family: "Jost", sans-serif;
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#dynamic-content {
+    margin: 2rem;
+}
+
+#error {
+    color: red;
+}
+
+footer {
+    background-color: #564733;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FFFF;
+    margin-top: 40px;
+    clear: both;
+}
+
+.foot-info h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.foot-info p {
+    font-family: "Jost", sans-serif;
+    font-size: 0.75rem;
+}
+
+.foot-link {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.foot-link a {
+    text-decoration: none;
+    color: #D2B48C;
+}
+
+article {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: "Jost", sans-serif;
+    line-height: 1.6;
+    color: #000;
+}
+
+article h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    color: #564733;
+    text-align: center;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+article p {
+    text-align: left;
+}
+
+.card img {
+    border-radius: 10px;
+}
+
+.card:last-child {
+    margin-bottom: 4rem;
+}
+
+.portfolio h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #564733;
+    text-align: center;
+}
+
+.card h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+    color: #564733;
+    margin-top: 1rem;
+} 
+
+/* .card img {
+    margin-right: 0;
+} */
+
+
+
+/* this is for the tablet view  */
+@media only screen and (min-width: 35rem) {
+
+    .button-wrap {
+        flex-direction: column;
+    }
+
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80rem;
+    }
+
+    #controls button {
+        flex: 1;
+        margin: 0;
+        width: 100%;
+    }
+
+    #controls {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .article-display {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    article p {
+        text-align: justify;
+        font-size: 1rem;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    article img {
+        max-width: 40%;
+        height: auto;
+        float: left;
+        margin-bottom: 1rem;
+        margin-right: 2rem;
+    }
+
+    .mast-info p {
+        font-size: 1rem;
+    }
+
+    .mast-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .foot-info p {
+        font-size: 1rem;
+    }
+
+    .foot-info h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+
+    .foot-link a {
+        font-size: 1rem;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 4rem;
+    }
+
+    .port-wrap {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .card-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .card-wrap-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    /* .port-wrap {
+        align-items: center;
+    } */
+
+
+    
+}
+
+
+/* This is for the desktop view  */
+@media only screen and (min-width: 80rem) {
+    .wrapper {
+        flex-direction: row; 
+        justify-content: flex-start; 
+        align-items: center; 
+        padding-bottom: 40px;
+    }
+
+    .logo {
+        margin-right: 2rem;
+    }
+
+    .button-wrap {
+        flex-direction: row; 
+        align-items: center;
+        width: auto;
+        gap: 2rem;
+    }
+
+    #controls button {
+        margin-right: 20px;
+    }
+
+    .mast-heading {
+        display: none;
+       /* position: absolute;
+       top: 10%; 
+       left: 50%;
+       transform: translateX(-70%);
+       text-align: center; */
+    }
+
+    .mast-info p {
+        font-size: 1.25rem;
+    }
+
+    .mast-info h3 {
+        font-size: 1.75rem;
+        margin-bottom: 20px;
+    }
+
+    article p {
+        font-size: 1.25rem;
+    }
+
+    .foot-info p {
+        font-size: 1.25rem;
+    }
+
+    .foot-info h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+
+    .port-wrap {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .card-wrap {
+        flex-direction: row;
+        /* gap: 1.5rem; */
+    }
+
+    .card-wrap-2 {
+        flex-direction: row;
+    }
+
+}
+
